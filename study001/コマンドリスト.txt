@@ -1,0 +1,71 @@
+
+名前なしイメージ生成
+docker build .
+
+一覧表示
+docker image ls 
+
+イメージ削除
+docker rmi ******
+
+
+名前付き生成
+docker build -t neko:111 .
+
+
+コンテナ実行
+docker run --name xxxxx  -it neko:111 /bin/bash
+
+docker exec -it c156f806a558  /bin/bash
+
+
+[linux コマンド]
+ファイル一覧
+ls 
+パス確認
+pwd
+ディレクトリ変更
+cd 
+ファイル内テキスト参照
+cat 
+ファイル編集
+vim
+空ファイル作成
+touch XXXXX
+
+
+vim インストール
+Ubuntu
+
+(この環境はsudo不要)
+sudo apt update
+sudo apt-get install vim
+
+
+CentOS
+yum list installed | grep vim
+
+
+[vim]
+https://qiita.com/kon_yu/items/b8864ff566b8b67a9810
+入力モード切替
+i
+保存済みのファイルを開いているvim
+:q
+ファイルを保存しないでvimを抜ける場合
+:q!
+ファイルを保存してからvimを抜ける場合
+:wq
+
+
+ファイル削除
+rm test.txt
+
+稼働中コンテナ確認
+docker ps 
+
+停止コンテナ確認
+docker ps -a 
+
+
+
