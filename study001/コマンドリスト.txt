@@ -14,9 +14,14 @@ docker build -t neko:111 .
 
 
 コンテナ実行
-docker run --name xxxxx  -it neko:111 /bin/bash
+docker run --name xxxxx  -it neko:111 bash
 
 docker exec -it c156f806a558  /bin/bash
+
+
+
+docker run -it ubuntu bash
+
 
 
 [linux コマンド]
