@@ -37,6 +37,16 @@ cat
 vim
 空ファイル作成
 touch XXXXX
+環境変数確認
+env
+
+権限付与
+https://qiita.com/shisama/items/5f4c4fa768642aad9e06
+chmod 777 ファイル名
+chmod u+x ファイル名 
+
+権限確認
+ls -l
 
 
 vim インストール
@@ -49,6 +59,9 @@ sudo apt-get install vim
 
 CentOS
 yum list installed | grep vim
+
+
+
 
 
 [vim]

@@ -1,0 +1,34 @@
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04-ja
+
+
+docker build -t test002 .
+
+
+レイヤーの確認
+docker history ******
+
+
+
+
+docker run -d  -p 80:80 --name continer_test002  test002
+
+
+
+
+
+コンテナのログ確認
+docker logs *******
+
+
+
+起動しないコンテナに入る方法
+
+コミットしてimageとして内部参照する
+
+docker commit XXXXX name
+
+docker run --rm -it XXXX name sh
+
+
+
