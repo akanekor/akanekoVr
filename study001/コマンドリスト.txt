@@ -1,58 +1,61 @@
 
-–¼‘O‚È‚µƒCƒ[ƒW¶¬
+åå‰ãªã—ã‚¤ãƒ¡ãƒ¼ã‚¸ç”Ÿæˆ
 docker build .
 
-ˆê——•\¦
+ä¸€è¦§è¡¨ç¤º
 docker image ls 
 
-ƒCƒ[ƒWíœ
+ã‚¤ãƒ¡ãƒ¼ã‚¸å‰Šé™¤
 docker rmi ******
 
 
-–¼‘O•t‚«¶¬
+åå‰ä»˜ãç”Ÿæˆ
 docker build -t neko:111 .
 
 
-ƒRƒ“ƒeƒiÀs
-docker run --name xxxxx  -it neko:111 bash
+ã‚³ãƒ³ãƒ†ãƒŠå®Ÿè¡Œ
+docker run -it -d -p80:80 --name ã‚³ãƒ³ãƒ†ãƒŠå dockerImageå
 
+docker run --cap-add=NET_ADMIN -it -d -p80:80 --name ã‚³ãƒ³ãƒ†ãƒŠå dockerImageå
+
+
+
+ã‚³ãƒ³ãƒ†ãƒŠå†…ã«å…¥ã‚Šã€bashã§æ“ä½œã™ã‚‹
 docker exec -it c156f806a558  /bin/bash
 
 
+apt-get update 
+apt-get install -y vim
+apt-get install -y nginx
+apt-get install -y systemctl
 
-docker run -it ubuntu bash
+//å¸¸é§
+systemctl status nginx
 
+nginx
 
-
-[linux ƒRƒ}ƒ“ƒh]
-ƒtƒ@ƒCƒ‹ˆê——
-ls 
-ƒpƒXŠm”F
-pwd
-ƒfƒBƒŒƒNƒgƒŠ•ÏX
-cd 
-ƒtƒ@ƒCƒ‹“àƒeƒLƒXƒgQÆ
-cat 
-ƒtƒ@ƒCƒ‹•ÒW
-vim
-‹óƒtƒ@ƒCƒ‹ì¬
-touch XXXXX
-ŠÂ‹«•Ï”Šm”F
-env
-
-Œ ŒÀ•t—^
-https://qiita.com/shisama/items/5f4c4fa768642aad9e06
-chmod 777 ƒtƒ@ƒCƒ‹–¼
-chmod u+x ƒtƒ@ƒCƒ‹–¼ 
-
-Œ ŒÀŠm”F
-ls -l
+service nginx status 
 
 
-vim ƒCƒ“ƒXƒg[ƒ‹
+
+
+
+PCã‹ã‚‰ã‚³ãƒ³ãƒ†ãƒŠå†…ã«ã‚³ãƒ”ãƒ¼
+docker cp index.html test001_1:/var/www/html/index.html
+
+
+
+
+
+
+
+
+
+
+vim ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 Ubuntu
 
-(‚±‚ÌŠÂ‹«‚Ísudo•s—v)
+(ã“ã®ç’°å¢ƒã¯sudoä¸è¦)
 sudo apt update
 sudo apt-get install vim
 
@@ -64,25 +67,15 @@ yum list installed | grep vim
 
 
 
-[vim]
-https://qiita.com/kon_yu/items/b8864ff566b8b67a9810
-“ü—Íƒ‚[ƒhØ‘Ö
-i
-•Û‘¶Ï‚İ‚Ìƒtƒ@ƒCƒ‹‚ğŠJ‚¢‚Ä‚¢‚évim
-:q
-ƒtƒ@ƒCƒ‹‚ğ•Û‘¶‚µ‚È‚¢‚Åvim‚ğ”²‚¯‚éê‡
-:q!
-ƒtƒ@ƒCƒ‹‚ğ•Û‘¶‚µ‚Ä‚©‚çvim‚ğ”²‚¯‚éê‡
-:wq
 
 
-ƒtƒ@ƒCƒ‹íœ
+ãƒ•ã‚¡ã‚¤ãƒ«å‰Šé™¤
 rm test.txt
 
-‰Ò“­’†ƒRƒ“ƒeƒiŠm”F
+ç¨¼åƒä¸­ã‚³ãƒ³ãƒ†ãƒŠç¢ºèª
 docker ps 
 
-’â~ƒRƒ“ƒeƒiŠm”F
+åœæ­¢ã‚³ãƒ³ãƒ†ãƒŠç¢ºèª
 docker ps -a 
 
 

@@ -1,16 +1,16 @@
-FROM ubuntu
+FROM ubuntu:16.04
 
 # RUNコマンドの結合。 && もしくは \ にて結合
 RUN apt-get update && apt-get install -y \
-    nginx　\ 
-    systemctl
+    nginx \
+    vim
 
-COPY index.html /usr/share/nginx/html/
+COPY index.html /var/www/html/index.html
 
 
 EXPOSE 80
 
-CMD ["systemctl","status","nginx"] 
-#CMD ["nginx","-g","deamon off;"] 
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
 
 #CMD と　ENTRYPOINTの違いについて
