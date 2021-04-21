@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:centos7
 
 MAINTAINER na0AaooQ
 
@@ -6,7 +6,7 @@ ENV PATH $PATH:/usr/bin
 
 RUN yum -y update
 
-RUN rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
+RUN rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
 RUN yum -y install nginx
 
