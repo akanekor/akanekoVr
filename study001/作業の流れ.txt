@@ -1,0 +1,40 @@
+
+目的：
+dockerfileの作成手順を一通り覚える
+
+基本情報:
+dockerfileとは
+dockerfile ﾚｲﾔｰの概念の説明
+
+
+テーマ:
+ubuntベースのnginxサーバの構築。
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04-ja
+
+
+
+
+
+
+(1)vdcodeのターミナル操作
+　　イメージ構築/イメージ一覧確認/イメージ削除
+    コンテナ構築/コンテナ一覧確認/コンテナ削除
+　　コンテナ内部操作
+
+(2)ubunt環境を構築して
+　手動でnginx環境をインストール
+  nginx実行
+  linux操作
+  vim操作
+
+
+(3)上記の流れをdockerfileにした場合(002)
+
+
+(4)おまけ CentOS に変更した場合何が変わるかの例(003)
+
+
+
+
+

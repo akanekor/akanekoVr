@@ -1,18 +1,28 @@
 [linux コマンド]
 ファイル一覧
 ls 
+
 パス確認
 pwd
+
 ディレクトリ変更
-cd 
+cd xxx
+
 ファイル内テキスト参照
-cat 
+cat xxxx
+
 ファイル編集
-vim
+vim xxxx
+
 空ファイル作成
 touch XXXXX
+
 環境変数確認
 env
+
+ファイル削除
+rm test.txt
+
 
 権限付与
 https://qiita.com/shisama/items/5f4c4fa768642aad9e06

@@ -1,4 +1,8 @@
 
+ubuntuイメージ事前取得
+docker pull ubuntu:16.04
+
+
 名前なしイメージ生成
 docker build .
 
@@ -10,14 +14,26 @@ docker rmi ******
 
 
 名前付き生成
-docker build -t neko:111 .
+docker build -t neko:test001 .
 
 
 コンテナ実行
 docker run -it -d -p80:80 --name コンテナ名 dockerImage名
 
-docker run --cap-add=NET_ADMIN -it -d -p80:80 --name コンテナ名 dockerImage名
 
+特殊：ネット権限付与操作が必要な場合のコンテナ実行
+((docker run --cap-add=NET_ADMIN -it -d -p80:80 --name コンテナ名 dockerImage名))
+
+
+稼働中コンテナ確認
+docker ps 
+
+停止コンテナ確認
+docker ps -a 
+
+//コンテナ 停止 or 開始
+docker stop  XXXX
+docker start XXXX
 
 
 コンテナ内に入り、bashで操作する
@@ -29,54 +45,18 @@ apt-get install -y vim
 apt-get install -y nginx
 apt-get install -y systemctl
 
-//常駐
+
+
+
+//nginx常駐
 systemctl status nginx
 
+//nginx 実行
 nginx
 
+//nginx サービス化
 service nginx status 
-
-
-
-
 
 PCからコンテナ内にコピー
 docker cp index.html test001_1:/var/www/html/index.html
-
-
-
-
-
-
-
-
-
-
-vim インストール
-Ubuntu
-
-(この環境はsudo不要)
-sudo apt update
-sudo apt-get install vim
-
-
-CentOS
-yum list installed | grep vim
-
-
-
-
-
-
-
-ファイル削除
-rm test.txt
-
-稼働中コンテナ確認
-docker ps 
-
-停止コンテナ確認
-docker ps -a 
-
-
 
