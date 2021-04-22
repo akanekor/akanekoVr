@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-MAINTAINER na0AaooQ
+MAINTAINER testuser
 
 ENV PATH $PATH:/usr/bin
 

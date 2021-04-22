@@ -1,10 +1,16 @@
 
 目的：
-dockerfileの作成手順を一通り覚える
+dockerfileの作成手順を覚える
+
 
 基本情報:
 dockerfileとは
+https://qiita.com/matsugaknight/items/c77fec14ec3c281a47b4
+https://qiita.com/soushiy/items/0945bcbc7ecce4822985
+
 dockerfile ﾚｲﾔｰの概念の説明
+https://docs.docker.jp/v17.06/engine/userguide/storagedriver/imagesandcontainers.html
+
 
 
 テーマ:
@@ -16,11 +22,20 @@ https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-
 
 
 
+(流れ)
 
-(1)vdcodeのターミナル操作
-　　イメージ構築/イメージ一覧確認/イメージ削除
-    コンテナ構築/コンテナ一覧確認/コンテナ削除
-　　コンテナ内部操作
+(準備)
+git hub から取得
+  c:\docker フォルダを作成
+  Git Bash 起動
+  git clone https://github.com/akanekor/akanekoVr.git
+  VScode起動　→　ファイル　→　フォルダを開く
+　  → study001 フォルダを指定
+
+(1)vscodeのターミナル操作
+　イメージ構築/イメージ一覧確認/イメージ削除
+  コンテナ構築/コンテナ一覧確認/コンテナ削除
+　コンテナ内部操作
 
 (2)ubunt環境を構築して
 　手動でnginx環境をインストール
@@ -32,7 +47,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-
 (3)上記の流れをdockerfileにした場合(002)
 
 
-(4)おまけ CentOS に変更した場合何が変わるかの例(003)
+(4)おまけ CentOS7 に変更した場合何が変わるかの例(003)
 
 
 

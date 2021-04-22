@@ -1,0 +1,7 @@
+
+MAINTAINER（廃止予定）
+LABEL maintainer="testuser"
+
+
+#CMD と　ENTRYPOINTの違いについて
+https://qiita.com/hihihiroro/items/d7ceaadc9340a4dbeb8f

@@ -36,16 +36,20 @@ docker stop  XXXX
 docker start XXXX
 
 
-コンテナ内に入り、bashで操作する
+//コンテナ内に入り、bashで操作する
 docker exec -it c156f806a558  /bin/bash
 
-
+//必要なソフトをインストール
 apt-get update 
 apt-get install -y vim
 apt-get install -y nginx
 apt-get install -y systemctl
 
+//環境変数確認
+env
 
+//環境変数追加
+export PATH="$PATH:/usr/bin"
 
 
 //nginx常駐

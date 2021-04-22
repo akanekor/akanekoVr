@@ -7,10 +7,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY index.html /var/www/html/index.html
 
+ENV PATH $PATH:/usr/bin
 
 EXPOSE 80
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 
-
-#CMD と　ENTRYPOINTの違いについて
