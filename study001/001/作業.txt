@@ -49,7 +49,7 @@ apt-get install -y systemctl
 
 
 //nginx常駐
-systemctl status nginx
+systemctl enable nginx
 
 //nginx 実行
 nginx
