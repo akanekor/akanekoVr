@@ -4,33 +4,37 @@ dockerfileの作成手順を覚える
 
 
 基本情報:
-dockerfileとは
-https://qiita.com/matsugaknight/items/c77fec14ec3c281a47b4
-https://qiita.com/soushiy/items/0945bcbc7ecce4822985
 
-dockerfile ﾚｲﾔｰの概念の説明
+①dockerfile ﾚｲﾔｰの概念の説明
 https://docs.docker.jp/v17.06/engine/userguide/storagedriver/imagesandcontainers.html
-
+https://www.slideshare.net/zembutsu/docker-images-containers-and-lifecycle (11ページから)
 
 
 テーマ:
-ubuntベースのnginxサーバの構築。
-
+②ubuntベースのnginxサーバの構築。
 https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04-ja
 
 
+③dockerfileの書き方
+https://qiita.com/matsugaknight/items/c77fec14ec3c281a47b4
+https://qiita.com/soushiy/items/0945bcbc7ecce4822985
 
 
 
 (流れ)
 
 (準備)
-git hub から取得
+(0)git hub から取得
   c:\docker フォルダを作成
   Git Bash 起動
   git clone https://github.com/akanekor/akanekoVr.git
   VScode起動　→　ファイル　→　フォルダを開く
 　  → study001 フォルダを指定
+
+(①dockerfile ﾚｲﾔｰの概念の説明)
+(②ubuntベースのnginxサーバの構築。)
+
+
 
 (1)vscodeのターミナル操作
 　イメージ構築/イメージ一覧確認/イメージ削除
@@ -43,7 +47,7 @@ git hub から取得
   linux操作
   vim操作
 
-
+(③dockerfileの書き方)
 (3)上記の流れをdockerfileにした場合(002)
 
 
