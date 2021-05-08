@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: .
+    environment:
+      DISABLE_SPRING: "1" 
+      DB_USERNAME: "root"
+      DB_PASSWORD: "root"
+      DB_HOST: "db"
+    volumes:
+      - ".:/var/local/rails5_product"
+    links:
+      - "db"
+  
+  db:
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"

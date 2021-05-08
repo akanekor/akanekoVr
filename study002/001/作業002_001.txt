@@ -1,0 +1,15 @@
+①基礎概要
+https://docs.docker.jp/compose/overview.html
+docker composeで　出来る事.
+  複数のコンテナを定義し実行する
+  〇WEB３層構造
+  〇負荷分散
+  〇コンテナの隠蔽化
+
+
+yamlファイルの書き方やと特徴
+https://ja.wikipedia.org/wiki/YAML
+https://qiita.com/supercell1023koeda/items/6b1fd399b1957077651a
+
+docker-compose.ymlの書き方について解説してみた
+https://qiita.com/yuta-ushijima/items/d3d98177e1b28f736f04

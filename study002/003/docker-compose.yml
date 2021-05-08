@@ -1,0 +1,47 @@
+version: "3"
+
+services:
+  # Nginx
+  myapp-web:
+    container_name: myapp-web
+    image: nginx:1.19
+    depends_on:
+      - myapp-php
+      - myapp-db
+    ports:
+      - "80:80"
+    volumes:
+      - "./nginx-templates:/etc/nginx/templates"
+      - "./html:/var/www/html"
+
+  # PHP-FPM
+  myapp-php:
+    container_name: myapp-php
+    build:
+      context: ./myapp-php
+      dockerfile: Dockerfile
+    volumes:
+      - "./html:/var/www/html"
+
+  # PostgreSQL
+  myapp-db:
+    container_name: myapp-db
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_DB: dfw_admin
+      POSTGRES_USER: dfw_user
+      POSTGRES_PASSWORD: ex
+    volumes:
+      - "./initdb:/docker-entrypoint-initdb.d"
+
+  # Adminer
+  myapp-adminer:
+    container_name: myapp-adminer
+    image: adminer:4.7-standalone
+    depends_on:
+      - myapp-db
+    environment:
+      ADMINER_DEFAULT_SERVER: myapp-db
+      ADMINER_DESIGN: ng9
+    ports:
+      - "8080:8080"

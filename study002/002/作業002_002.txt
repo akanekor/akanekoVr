@@ -1,0 +1,31 @@
+docker-compose コマンドまとめ
+https://qiita.com/wasanx25/items/d47caf37b79e855af95f
+
+docker-compose build
+docker-compose bundle ×
+docker-compose config
+docker-compose create
+docker-compose down
+docker-compose events ×
+
+docker-compose exec XXXXX /bin/bash
+docker-compose images
+docker-compose kill
+docker-compose logs
+docker-compose pause
+docker-compose port
+docker-compose ps
+docker-compose pull
+docker-compose push ×
+docker-compose restart
+docker-compose rm
+docker-compose run  XXXXX /bin/bash
+docker-compose scale  xxxx=2
+docker-compose start
+docker-compose stop
+docker-compose top
+docker-compose unpause
+
+docker-compose up 
+docker-compose up -d
+docker-compose up --build

@@ -1,0 +1,33 @@
+
+前回の宿題 docker の保存場所
+
+wsl
+%LOCALAPPDATA%\Docker\wsl\data\
+C:\Users\akaneko7\AppData\Local\Docker\wsl\data
+
+wsl2
+\\wsl$
+%userprofile%\AppData\Local\Packages
+
+/var/lib/docker/overlay
+
+
+目的：
+docker compose　の使い方を覚える
+
+流れ
+
+①基礎概要
+②コマンド操作を覚える
+③yamlﾌｧｲﾙを書いてみる
+  コンテナ結合
+　valume について
+　環境変数について
+
+
+
+準備
+docker pull postgres:12-alpine
+docker pull nginx:1.19
+docker pull adminer:4.7-standalone
+docker pull php:7.4-fpm
