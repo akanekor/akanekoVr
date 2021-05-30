@@ -1,8 +1,7 @@
 
 目的：
-
-①Kubernetes についての理解する
-②基本コマンド習得
+①Kubernetes について説明
+②基本ｺﾏﾝﾄﾞ
 ③ﾏﾆﾌｪｽﾄﾌｧｲﾙの書き方の基本を覚える
 
 https://cstoku.dev/posts/2018/k8sdojo-01/
@@ -10,5 +9,4 @@ https://cstoku.dev/posts/2018/k8sdojo-01/
 
 次回：
 主なkindについて一つづず勉強？？？？
-
 
