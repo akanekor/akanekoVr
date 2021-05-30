@@ -1,0 +1,28 @@
+
+
+リソース作成
+kubectl apply -f (FILE)
+
+
+リソース確認
+kubectl get (TYPE)
+
+
+リソース削除
+kubectl delete (TYPE/NAME)
+
+
+Podに入ってコマンド実行
+kubectl exec -it (NAME) sh
+
+
+Pod⇔ホスト間のファイル転送
+kubectl cp SRC DEST
+
+
+ログ確認
+kubectl describe (TYPE/NAME)
+kubectl logs (TYPE/NAME)
+
+
+
