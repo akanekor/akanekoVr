@@ -31,3 +31,4 @@ docker pull postgres:12-alpine
 docker pull nginx:1.19
 docker pull adminer:4.7-standalone
 docker pull php:7.4-fpm
+docker pull mysql:5.6
