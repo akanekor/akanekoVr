@@ -1,0 +1,10 @@
+apiVersion: 
+kind: 
+
+metadata:
+  mame:
+  namespace: defult
+
+spec:
+  containers:
+
