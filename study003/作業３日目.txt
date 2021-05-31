@@ -10,3 +10,7 @@ https://cstoku.dev/posts/2018/k8sdojo-01/
 次回：
 主なkindについて一つづず勉強？？？？
 
+
+
+（kind  ver検索時の参考検索）
+Ingress 
