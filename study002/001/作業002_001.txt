@@ -2,7 +2,6 @@
 https://docs.docker.jp/compose/overview.html
 docker composeで　出来る事.
   複数のコンテナを定義し実行する
-  〇WEB３層構造
   〇負荷分散
   〇コンテナの隠蔽化
 
